@@ -14,19 +14,3 @@ public class numbercrunching {
             System.out.println(reverse);
         }
     }
-        import java.util.*;
-    public class numbercrunching {
-        public static void main(String[] args) {
-            Scanner input = new Scanner(System.in);
-            int a = input.nextInt();
-            int count = 0;
-            while (a != 0) {
-                int pop = a % 10;
-                count++;
-                a /= 10;
-            }
-
-            System.out.println(count);
-        }
-    }
-
