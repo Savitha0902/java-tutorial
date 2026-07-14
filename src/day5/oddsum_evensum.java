@@ -1,4 +1,4 @@
-package day4;
+package day5;
 import java.util.*;
 public class oddsum_evensum {
     public static void main(String[] args){
