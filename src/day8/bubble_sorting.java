@@ -2,9 +2,9 @@ package day8;
 import java.util.*;
 public class bubble_sorting {
     public static void main(String[]args){
-        int[]arr={1,4,2,5,3,7,9};
+        int []arr={1,5,4,2,8};
         for(int i=0;i<arr.length;i++){
-            for(int j=i+1;j<arr.length;j++){
+            for(int j=i+1;j<arr.length;i++){
                 if(arr[i]>arr[j]){
                     int temp=arr[i];
                     arr[i]=arr[j];
@@ -15,5 +15,6 @@ public class bubble_sorting {
                 System.out.println(num);
             }
         }
+
     }
 }

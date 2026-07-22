@@ -1,7 +1,6 @@
 package day3;
 import java.util.*;
 public class numbercrunching {
-
         public static void main(String[] args) {
             Scanner input = new Scanner(System.in);
             int a = input.nextInt();
