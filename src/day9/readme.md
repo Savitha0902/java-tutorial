@@ -46,4 +46,4 @@ Practiced Java programming by solving LeetCode problems to strengthen problem-so
 - Gained confidence solving LeetCode problems consistently.
 
 ## Screenshot
-LeetCode progress screenshot is available in the `Screenshots` folder.
+LeetCode progress screenshot is available in the progress file.
