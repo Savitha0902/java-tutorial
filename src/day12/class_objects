@@ -1,0 +1,49 @@
+package oops_day1;
+import java.util.*;
+class a{
+    int a;
+    int b;
+    int c;
+    String d;
+    a(int a){
+        this.a=a;
+    }
+    void display(int a){
+        System.out.println(a);
+    }
+    a(int a,int b){
+        this.a=a;
+        this.b=b;
+    }
+    void display(int a,int b){
+        System.out.println(a+" "+b);
+    }
+    a(int a,int b,int c){
+        this.a=a;
+        this.b=b;
+        this.c=c;
+    }
+    void display(int a,int b,int c){
+        System.out.println(a+" "+b+" "+c);
+    }
+    a(String d){
+        this.d=d;
+    }
+    void display(String d){
+        System.out.println(d);
+    }
+
+}
+public class class_objects {
+    public static void main(String[]args){
+        Scanner rs=new Scanner(System.in);
+        int in=rs.nextInt();
+        int input=rs.nextInt();
+        int input1=rs.nextInt();
+        a obj=new a(in,input);
+        obj.display(in,input);
+        a obj1=new a(input1);
+        obj.display(input1);
+
+    }
+}
