@@ -1,0 +1,28 @@
+package oops_day2;
+class a{
+    void display(){
+        System.out.println("hiii");
+    }
+}
+class b extends a{
+    void show(){
+        System.out.println("guys");
+    }
+}
+class c extends b{
+    void sh(){
+        System.out.println("welcome back!!");
+    }
+}
+public class mutlilevel_inheritance {
+    public static void main(String[]args){
+        a obj=new a();
+        b obj1=new b();
+        c obj2=new c();
+        obj1.display();
+        obj2.display();
+        obj2.show();
+        obj2.sh();
+
+    }
+}
