@@ -1,0 +1,32 @@
+package oops_day2;
+class A{
+    void display(){
+        System.out.println("hello");
+    }
+}
+class B extends A{
+    void show(){
+        System.out.println("world");
+    }
+}
+/*class c extends A{
+    int a;
+    int b;
+     int add(int a,int b){
+         this.a=a;
+         this.b=b;
+         return a+b;
+     }
+
+}*/
+public class single_inheritance {
+    public static void main(String[]args){
+        A obj=new A();
+        B on=new B();
+        on.display();
+        on.show();
+        obj.display();
+       // c sa=new c();
+       // System.out.println(sa.add(4,5));
+    }
+}
