@@ -1,0 +1,26 @@
+package oops_day2;
+class animal{
+    void sound(){
+        System.out.println("sounds that are made by animals");
+    }
+}
+class dog extends animal{
+    @Override
+    void sound(){
+        System.out.println("sound made by dog");
+    }
+}
+class cat extends animal{
+    void sound(){
+        System.out.println("sound made by cat ");
+    }
+}
+public class method_overriding2 {
+    public static void main(String[]args){
+        dog obj=new dog();
+        obj.sound();
+        cat obj1=new cat();
+        obj1.sound();
+
+    }
+}
