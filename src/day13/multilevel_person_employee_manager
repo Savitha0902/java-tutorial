@@ -1,0 +1,80 @@
+package oops_day2;
+class person{
+    String name;
+    int age;
+    person(String name,int age){
+        this.age=age;
+        this.name=name;
+    }
+    void setperson(String name,int age){
+        this.name=name;
+        this.age=age;
+    }
+    String geta(){
+        return name;
+    }
+    int getb(){
+        return age;
+    }
+    void display(){
+        System.out.println("name:"+name);
+        System.out.println("age:"+age);
+    }
+}
+class employee extends person{
+    int id;
+    int salary;
+    employee(String name,int age,int id,int salary){
+        super(name,age);
+        this.id=id;
+        this.salary=salary;
+    }
+    void setemployee(int id,int salary){
+        this.id=id;
+        this.salary=salary;
+    }
+    int getc(){
+        return id;
+    }
+    int getd(){
+        return salary;
+    }
+    void show(){
+        System.out.println("id:"+id);
+        System.out.println("salary:"+salary);
+    }
+
+}
+class manager extends employee{
+    int years;
+    String dept;
+    manager(String name,int age,int id,int salary,int years,String dept){
+        super(name,age,id,salary);
+        this.years=years;
+        this.dept=dept;
+    }
+    void setmanager(int years,String dept){
+
+        this.years=years;
+        this.dept=dept;
+    }
+    int gete(){
+        return years;
+    }
+    String getf(){
+        return dept;
+    }
+    void dis(){
+        System.out.println("experience:"+years);
+        System.out.println("dept:"+dept);
+    }
+}
+public class multilevel_person_employee_manager {
+    public static void main(String[]args){
+        manager obj=new manager("savi",19,96,500000,2,"account");
+        obj.dis();
+        obj.show();
+        obj.display();
+
+    }
+}
