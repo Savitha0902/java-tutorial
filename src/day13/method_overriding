@@ -1,0 +1,24 @@
+package oops_day2;
+class car{
+    void station(){
+        System.out.println("car station");
+    }
+}
+class petrolcar extends car{
+    void station(){
+        System.out.println("petrol station");
+    }
+}
+class  evcar extends car{
+    void station(){
+        System.out.println("ev station");
+    }
+}
+public class method_overriding {
+    public static void main(String[]args){
+        petrolcar obj=new petrolcar();
+        obj.station();
+        evcar obj2=new evcar();
+        obj2.station();
+    }
+}
