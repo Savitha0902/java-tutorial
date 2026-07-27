@@ -1,0 +1,30 @@
+package oops_day2;
+class AA{
+    private int a;
+    private int b;
+    private String name;
+    AA(int a,int b,String name){
+        this.a=a;
+        this.b=b;
+        this.name=name;
+    }
+    void setID(int a,int b){
+        this.a=a;
+        this.b=b;
+    }
+    int getA(){
+        return this.a;
+    }
+    int getB(){
+        return this.b;
+    }
+    void display(){
+        System.out.println(a+" "+b+" "+name);
+    }
+}
+public class encapsulation {
+    public static void main(String[]args){
+        AA obj=new AA(4,5,"savi");
+        obj.display();
+    }
+}
